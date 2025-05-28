@@ -2,7 +2,7 @@
 ## Data Information
 This project uses a mock healthcare CSV dataset from Kaggle that provides comprehensive statistics on healthcare from around the world. The dataset includes health statistics from countries that vary in geography and economic factors. There are 1,000,000 records in the dataset.
 
-The CSV file used to generate graphs is a healthcare dataset from Kaggle that provides comprehensive statistics on healthcare from around the world. The dataset includes health statistics from countries that vary in geography and economic factors. There are 1,000,000 records in the dataset. I used the Python language along with Jupyter Notebooks to perform some data preparation for machine learning and apply machine learning techniques on the dataset to find significant trends and patterns for the analysis. Before analyzing the data, I cleaned out NULL values, checked the data for inaccuracies, and transformed it into multiple tables separated by their countries.
+
 
 ## Source
 **Title:** Global Health Statistics
@@ -61,3 +61,9 @@ Per Capita Income (USD) - The average income per person in the country.
 Education Index - The average level of education in the country.
 
 Urbanization Rate (%) - The percentage of the population living in urban areas.
+
+## Retrieved table from
+- https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics/data
+
+# Charts Generated For This Project
+I used the Python language along with Jupyter Notebooks to perform some data preparation for machine learning and apply machine learning techniques on the dataset to find significant trends and patterns for the analysis. Before analyzing the data, I cleaned out NULL values, checked the data for inaccuracies, and transformed it into multiple tables separated by their countries. The CSV file used to generate graphs is a healthcare dataset from Kaggle that provides comprehensive statistics on healthcare from around the world.
