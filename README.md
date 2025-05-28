@@ -82,4 +82,24 @@ I downloaded my CSV file from Kaggle to my local drive. Then, I imported the lib
 
 I noticed some inconsistent or incorrect data points in the dataset. I needed to perform some data cleansing operations. I wanted to know the names of diseases, disease types, and treatment types recorded on the table. Ebola, Parkinson’s Disease, and Malaria cannot be treated with surgery.
 
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Graphs/10%20Rows%20Raw%20Data.png)
 
+## Data Exploration
+I collected the names of all diseases in the table.
+
+I collected all the disease categories.
+
+I collected the list of treatment types.
+
+# Data Cleaning
+Before fixing incorrect information, I counted the number of NULL values per column. Since there are no NULL values, I did not have to drop or fill any rows.
+
+I corrected the information for the categories and treatment types for all diseases. Cancer is a special case where it can be treated with either Chemotherapy or Surgery or both.
+
+I displayed the data to show the updated information for each disease. Ebola, Parkinson’s Disease, and Malaria are no longer treated with surgery. Their treatments have been corrected with their appropriate remedies in real life.
+
+Next, I wanted to split the table by country to organize the data and work with a smaller dataset.
+
+I printed the list of countries. It allows me to choose which countries I want to analyze the data from. I can decide to analyze data from Italy, France, Turkey, and other countries included in the printed list. I named each table after the countries they represent. Since there are plenty of countries, I did not make tables for all of them. I chose to analyze data from the USA, Italy, Japan, and Indonesia.
+
+I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data.
