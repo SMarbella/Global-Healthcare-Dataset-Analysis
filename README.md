@@ -69,7 +69,9 @@ Urbanization Rate (%) - The percentage of the population living in urban areas.
 I used the Python language along with Jupyter Notebooks to perform some data preparation for machine learning and apply machine learning techniques on the dataset to find significant trends and patterns for the analysis. Before analyzing the data, I cleaned out NULL values, checked the data for inaccuracies, and transformed it into multiple tables separated by their countries. The CSV file used to generate graphs is a healthcare dataset from Kaggle that provides comprehensive statistics on healthcare from around the world.
 
 I imported the common libraries used for Jupyter Notebook. The pandas library is an open-source tool for data analysis and manipulation in Python. It reads files and creates Dataframes and Series. The Matplotlib library is used to generate graphical representations of data in Python. The NumPy library works with arrays and performs mathematical calculations.
+
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Imported%20Libraries/Basic%20Libraries.png)
 
 I imported the set of libraries I need to perform some machine learning techniques. The comments label where I will use each machine learning technique.
+
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Imported%20Libraries/Libraries%20for%20Graphs.png)
