@@ -68,6 +68,18 @@ Urbanization Rate (%) - The percentage of the population living in urban areas.
 # Charts Generated For This Project
 I used the Python language along with Jupyter Notebooks to perform some data preparation for machine learning and apply machine learning techniques on the dataset to find significant trends and patterns for the analysis. Before analyzing the data, I cleaned out NULL values, checked the data for inaccuracies, and transformed it into multiple tables separated by their countries. The CSV file used to generate graphs is a healthcare dataset from Kaggle that provides comprehensive statistics on healthcare from around the world.
 
+## Jupyter Notebooks Libraries
 I imported the common libraries used for Jupyter Notebook. The pandas library is an open-source tool for data analysis and manipulation in Python. It reads files and creates Dataframes and Series. The Matplotlib library is used to generate graphical representations of data in Python. The NumPy library works with arrays and performs mathematical calculations.
+
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Imported%20Libraries/Basic%20Libraries.png)
+
+I imported the set of libraries I need to perform some machine learning techniques. The comments label where I will use each machine learning technique.
+
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Imported%20Libraries/Libraries%20for%20Graphs.png)
+
+## First 10 Rows of Raw Data Table
+I downloaded my CSV file from Kaggle to my local drive. Then, I imported the libraries I need for my Python code to access machine learning functions. I extracted the path of my CSV file from my local drive into Jupyter Notebook. The headers are Country, Year, Disease Name, Disease Category, Prevalence Rate (%), Incidence Rate (%), Mortality Rate (%), Age Group, Gender, Population Affected, Healthcare Access (%), Doctors per 1000, Hospital Beds per 1000, Treatment Type, Average Treatment Cost (USD), Availability of Vaccines/Treatment, Recovery Rate (%), DALYs, Improvement in 5 Years (%), Per Capita Income (USD), Education Index, and Urbanization Rate (%).
+
+I noticed some inconsistent or incorrect data points in the dataset. I needed to perform some data cleansing operations. I wanted to know the names of diseases, disease types, and treatment types recorded on the table. Ebola, Parkinson’s Disease, and Malaria cannot be treated with surgery.
 
 
