@@ -85,11 +85,8 @@ I noticed some inconsistent or incorrect data points in the dataset. I needed to
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Graphs/10%20Rows%20Raw%20Data.png)
 
 ## Data Exploration
-I collected the names of all diseases in the table.
-
-I collected all the disease categories.
-
-I collected the list of treatment types.
+I collected the names of all diseases, disease categories, and treatment types from the table.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Exploration/List%20of%20Diseases%2C%20Treatments%2C%20and%20Disease%20Categories.png)
 
 # Data Cleaning
 Before fixing incorrect information, I counted the number of NULL values per column. Since there are no NULL values, I did not have to drop or fill any rows.
