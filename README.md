@@ -90,13 +90,15 @@ I collected the names of all diseases, disease categories, and treatment types f
 
 # Data Cleaning
 Before fixing incorrect information, I counted the number of NULL values per column. Since there are no NULL values, I did not have to drop or fill any rows.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Find%20Nulls.png)
 
 I corrected the information for the categories and treatment types for all diseases. Cancer is a special case where it can be treated with either Chemotherapy or Surgery or both.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Correct%20Inconsistencies.png)
 
 I displayed the data to show the updated information for each disease. Ebola, Parkinson’s Disease, and Malaria are no longer treated with surgery. Their treatments have been corrected with their appropriate remedies in real life.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Fixed%20Information.png)
 
-Next, I wanted to split the table by country to organize the data and work with a smaller dataset.
+Next, I wanted to split the table by country to organize the data and work with a smaller dataset. I printed the list of countries. It allows me to choose which countries I want to analyze the data from. I can decide to analyze data from Italy, France, Turkey, and other countries included in the printed list. I named each table after the countries they represent. Since there are plenty of countries, I did not make tables for all of them. I chose to analyze data from the USA, Italy, Japan, and Indonesia.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Split%20Into%20Countries.png)
 
-I printed the list of countries. It allows me to choose which countries I want to analyze the data from. I can decide to analyze data from Italy, France, Turkey, and other countries included in the printed list. I named each table after the countries they represent. Since there are plenty of countries, I did not make tables for all of them. I chose to analyze data from the USA, Italy, Japan, and Indonesia.
-
-I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data.
+I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data. I used the same procude to create tables for Italy, Japan, and Indonesia.
