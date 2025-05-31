@@ -101,4 +101,13 @@ I displayed the data to show the updated information for each disease. Ebola, Pa
 Next, I wanted to split the table by country to organize the data and work with a smaller dataset. I printed the list of countries. It allows me to choose which countries I want to analyze the data from. I can decide to analyze data from Italy, France, Turkey, and other countries included in the printed list. I named each table after the countries they represent. Since there are plenty of countries, I did not make tables for all of them. I chose to analyze data from the USA, Italy, Japan, and Indonesia.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Split%20Into%20Countries.png)
 
-I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data. I used the same procude to create tables for Italy, Japan, and Indonesia.
+I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data. I used the same procedure to create tables for Italy, Japan, and Indonesia.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/One%20Country%20Table.png)
+
+## Finding Feature Importances
+I prioritized data from the USA table. I started building the train and test data to gather feature importances. I wanted to find the feature importances when the target columns are Prevalence Rate (%), Recovery Rate (%), and Mortality Rate (%). It will give me insight into which feature greatly affects machine learning predictions. I split the data into train and test data. I fit a Random Forest Regressor model. I got the feature importance percentages from my Random Forest Regressor model. It displays the importances for each column with the highest on top and lowest on bottom. Recovery rate has the biggest impact on my machine learning model. I visualized these feature importance percentages in a bar graph. I measured the feature importances from my Random Forest Regressor model based on mean decrease in impurity. I measured the elapsed time.
+
+
+I measured the feature importances from my Random Forest Regressor model based on permutation. I measured the elapsed time. The mean decrease in impurity method performed the calculation faster than the permutation method. The feature importances help me understand which target column largely impacts my machine learning model’s prediction performance. Since the Recovery Rate (%) column has the highest feature importance, I chose it to see how my machine learning algorithms will perform. I will test it on Random Forest, Lasso, Gradient Boosting, and Stacking Regressor machine learning models.
+
+
