@@ -116,3 +116,6 @@ I measured the feature importances from my Random Forest Regressor model based o
 
 I used a column selector function make_column_selector() from sklearn.compose to show the columns that are categorical and other columns that are numerical. The pipeline requires a preprocessor for tree-based models. I made tree preprocessors for categorical columns and numerical columns. I defined the preprocessor for a linear model ending regressor for both categorical columns and numerical columns. After I completed making the tree preprocessors, I started to make the models. I made a Lasso model, a Random Forest Regressor model, Gradient Boosting Regressor model, and a Stacking Regressor model. I made a plot to generate my graphs. The graphs generated to show that Random Forest fits the truth line the best.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Graphs/Regressor%20Lines%20from%20Models.png)
+
+I tested the same models on a feature with weaker importance called Mortality Rate (%). Since I already have a pipeline with my four machine learning algorithms, I skipped directly to the code that creates the graphs.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Graphs/Weaker%20Regressor%20Lines%20from%20Models.png)
