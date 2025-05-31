@@ -124,8 +124,10 @@ I tested the same models on a feature with weaker importance called Mortality Ra
 
 ## USA Calculations
 Using a different selection of columns, I encoded the categorical columns into Python dictionaries with defined numeric codes. I made new test and train sets for a Random Forest Classifier machine learning model. I made a Random Forest Classifier model, fit it to the training data, and used the test data to make predictions. I made a sample prediction of the next USA patient and average treatment cost. The printed output comes from the sample prediction. It says that the most likely person will be 0-18 years old and will pay $37,330 to have the Zika virus treated.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/sample%20prediction%20of%20the%20next%20USA%20patient%20and%20average%20treatment%20cost.png)
 
 I added the Mortality Rate (%) and Recovery Rate (%) columns to see if the predicted treatment cost changes. The treatment cost increased by about $1,000 after learning about the mortality and recovery rates in the USA. This time, the person will be the same age and will pay the same amount to have the Zika virus treated. The predicted average treatment cost for patients in the USA is $37,076.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Mortality%20Rate%20(%25)%20and%20Recovery%20Rate%20(%25)%20columns.png)
 
 I wanted to focus on healthcare access and quality and how their factors affect Prevalence Rate (%), Recovery Rate (%), and Mortality Rate (%). The predictions are slightly off from the actual values. The Random Forest Regressor model overpredicted the Prevalence Rate (%) but underpredicted the Recovery Rate (%) and Mortality Rate (%). A 1.08 mean squared error means that the machine learning model’s predictions are quite close to the actual values. The R-squared value is close to 1, meaning the variables are highly dependent.
 
@@ -133,6 +135,7 @@ I added different target columns. I removed the Prevalence Rate (%) column and a
 
 ## Japan Calculations
 I used the same method on a different table for Japan. This time, the predicted patient will be 19-35 years old, have COVID-19, and pay $4,378 to have it treated. The predicted average treatment cost for Japanese patients is $17,868.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Predicted%20Japanese%20Patient.png)
 
 I used the same method for a different country. This time, the predicted and actual values for patient survival are different. The prevalence and recovery rates are lower than those in the USA. Japan has a higher mortality rate. Similarly, the Random Forest Regressor overpredicted the Prevalence Rate (%) and Recovery Rate (%) but underpredicted the Mortality Rate (%). The mean-squared error shows that the model is quite good at predicting values. The R-squared score is very close to 1, showing that the variables are dependent.
 
