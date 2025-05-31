@@ -109,7 +109,7 @@ I prioritized data from the USA table. I started building the train and test dat
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Choosing%20Feature%20Importances.png)
 
 I got the feature importance percentages from my Random Forest Regressor model. It displays the importances for each column with the highest on top and lowest on bottom. Recovery rate has the biggest impact on my machine learning model. I visualized these feature importance percentages in a bar graph. I measured the feature importances from my Random Forest Regressor model based on mean decrease in impurity. I measured the elapsed time.
-![Image[(https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Feature%20Importance%20Measurements.png)
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Feature%20Importance%20Measurements.png)
 
 I measured the feature importances from my Random Forest Regressor model based on permutation. I measured the elapsed time. The mean decrease in impurity method performed the calculation faster than the permutation method. The feature importances help me understand which target column largely impacts my machine learning model’s prediction performance. Since the Recovery Rate (%) column has the highest feature importance, I chose it to see how my machine learning algorithms will perform. I will test it on Random Forest, Lasso, Gradient Boosting, and Stacking Regressor machine learning models.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Feature%20Importances%20Using%20Permutation%20on%20Full%20Model.png)
