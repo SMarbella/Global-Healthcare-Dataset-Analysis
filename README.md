@@ -102,3 +102,4 @@ Next, I wanted to split the table by country to organize the data and work with 
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/Split%20Into%20Countries.png)
 
 I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data. I used the same procude to create tables for Italy, Japan, and Indonesia.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/One%20Country%20Table.png)
