@@ -2,8 +2,6 @@
 ## Data Information
 This project uses a mock healthcare CSV dataset from Kaggle that provides comprehensive statistics on healthcare from around the world. The dataset includes health statistics from countries that vary in geography and economic factors. There are 1,000,000 records in the dataset.
 
-
-
 ## Source
 **Title:** Global Health Statistics
 
@@ -65,7 +63,7 @@ Urbanization Rate (%) - The percentage of the population living in urban areas.
 ## Retrieved table from
 - https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics/data
 
-# Charts Generated For This Project
+# Charts and Calculations Generated For This Project
 I used the Python language along with Jupyter Notebooks to perform some data preparation for machine learning and apply machine learning techniques on the dataset to find significant trends and patterns for the analysis. Before analyzing the data, I cleaned out NULL values, checked the data for inaccuracies, and transformed it into multiple tables separated by their countries. The CSV file used to generate graphs is a healthcare dataset from Kaggle that provides comprehensive statistics on healthcare from around the world.
 
 ## Jupyter Notebooks Libraries
@@ -143,6 +141,7 @@ The healthcare access and hospital beds per 1000 are higher in Japan than in the
 
 ## Indonesia Calculations
 I used the same method for Indonesia. The predicted patient will be about 0-18 years old and will pay $34,387 to have the Zika virus treated. The predicted average treatment cost for Indonesian patients is $40,673.
+![image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Predicted%20Indonesian%20Patient.png)
 
 The Indonesian Patient Survival Predictions have similar Random Forest Regressor prediction errors, mean squared errors, and R-squared score to those found in the Patient Survival Predictions in the USA, Japan, and Italy. According to the R-squared score, the variables are very dependent.
 
@@ -150,6 +149,7 @@ The Indonesian Healthcare Access Outcome Predictions have similar Random Forest 
 
 ## Italy Calculations
 I used the same method for Italy. The predicted patient is 36-60 years old and will pay $7,740 to have Influenza treated. The average treatment cost for Italian patients is $34,912.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Predicted%20Italian%20Patient.png)
 
 The Random Forest Regressor model underpredicted Prevalence Rate (%) and Mortality Rate (%). It overpredicted Recovery Rate (%). The Random Forest Regressor model performed similarly on Italian patient survival prediction data, having similar mean squared error and R-squared scores to the patient survival predictions of both USA and Japan.
 
