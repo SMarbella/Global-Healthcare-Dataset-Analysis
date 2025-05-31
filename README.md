@@ -128,8 +128,10 @@ I added the Mortality Rate (%) and Recovery Rate (%) columns to see if the predi
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Mortality%20Rate%20(%25)%20and%20Recovery%20Rate%20(%25)%20columns.png)
 
 I wanted to focus on healthcare access and quality and how their factors affect Prevalence Rate (%), Recovery Rate (%), and Mortality Rate (%). The predictions are slightly off from the actual values. The Random Forest Regressor model overpredicted the Prevalence Rate (%) but underpredicted the Recovery Rate (%) and Mortality Rate (%). A 1.08 mean squared error means that the machine learning model’s predictions are quite close to the actual values. The R-squared value is close to 1, meaning the variables are highly dependent.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/USA%20Patient%20Survival%20Predictions.png)
 
 I added different target columns. I removed the Prevalence Rate (%) column and added Healthcare Access (%), Doctors per 1000, and Hospital Beds per 1000. I adjusted both the predicted and actual values to their corresponding columns. The Random Forest Regressor model underpredicted Healthcare Access (%), Doctors per 1000, Recovery Rate (%), and Mortality Rate (%). The mean squared error is higher, meaning that it performed worse than the previous dataset that used fewer target columns. The R-squared score shows that the variables are slightly more independent.
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/USA%20Healthcare%20Access%20Outcome%20Predictions.png)
 
 ## Japan Calculations
 I used the same method on a different table for Japan. This time, the predicted patient will be 19-35 years old, have COVID-19, and pay $4,378 to have it treated. The predicted average treatment cost for Japanese patients is $17,868.
@@ -137,7 +139,11 @@ I used the same method on a different table for Japan. This time, the predicted 
 
 I used the same method for a different country. This time, the predicted and actual values for patient survival are different. The prevalence and recovery rates are lower than those in the USA. Japan has a higher mortality rate. Similarly, the Random Forest Regressor overpredicted the Prevalence Rate (%) and Recovery Rate (%) but underpredicted the Mortality Rate (%). The mean-squared error shows that the model is quite good at predicting values. The R-squared score is very close to 1, showing that the variables are dependent.
 
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Japan%20Patient%20Survival%20Predictions.png)
+
 The healthcare access and hospital beds per 1000 are higher in Japan than in the USA, but there are fewer doctors, a lower recovery rate, and higher mortality rates. The Random Forest Regressor model overpredicted healthcare access and Recovery Rate (%). It underpredicted Doctors per 1000, Beds per 1000, and Mortality Rate (%). There is a higher mean squared error, meaning the model’s predictions are worse than the Patient Survival predictions. The R-squared score shows that the variables are somewhat dependent.
+
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Japan%20Healthcare%20Access%20Outcome%20Predictions.png)
 
 ## Indonesia Calculations
 I used the same method for Indonesia. The predicted patient will be about 0-18 years old and will pay $34,387 to have the Zika virus treated. The predicted average treatment cost for Indonesian patients is $40,673.
@@ -145,7 +151,11 @@ I used the same method for Indonesia. The predicted patient will be about 0-18 y
 
 The Indonesian Patient Survival Predictions have similar Random Forest Regressor prediction errors, mean squared errors, and R-squared score to those found in the Patient Survival Predictions in the USA, Japan, and Italy. According to the R-squared score, the variables are very dependent.
 
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Indonesia%20Patient%20Survival%20Predictions.png)
+
 The Indonesian Healthcare Access Outcome Predictions have similar Random Forest Regressor prediction errors, mean squared errors, and R-squared score to those found in the Healthcare Access Outcome Predictions in the USA, Japan, and Italy. According to the R-squared score, the variables are somewhat more independent.
+
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Indonesia%20Healthcare%20Access%20Outcome%20Predictions.png)
 
 ## Italy Calculations
 I used the same method for Italy. The predicted patient is 36-60 years old and will pay $7,740 to have Influenza treated. The average treatment cost for Italian patients is $34,912.
@@ -153,7 +163,11 @@ I used the same method for Italy. The predicted patient is 36-60 years old and w
 
 The Random Forest Regressor model underpredicted Prevalence Rate (%) and Mortality Rate (%). It overpredicted Recovery Rate (%). The Random Forest Regressor model performed similarly on Italian patient survival prediction data, having similar mean squared error and R-squared scores to the patient survival predictions of both USA and Japan.
 
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Italy%20Patient%20Survival%20Predictions.png)
+
 The prediction errors are like the ones found in the healthcare access predictions from Japan and USA. The Random Forest Regressor performed worse with a higher mean squared error on healthcare access outcome predictions than on patient survival predictions. It has a similar R-squared score to the healthcare access outcome predictions from Japan and the USA.
+
+![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Calculations/Italy%20Healthcare%20Access%20Outcome%20Predictions.png)
 
 # Summary
 First, I imported the global healthcare dataset CSV file from Kaggle, which includes inconsistent data for each disease. I imported the libraries I needed to perform the machine learning operations on the dataset. I checked for NULL values and found that there are no NULL values. I collected lists of disease names, disease categories, and treatment types to fix the information and make it consistent and more accurate. Since the dataset consists of data from many countries mixed into one table, I gathered the list of countries and split the data into separate tables by country.
