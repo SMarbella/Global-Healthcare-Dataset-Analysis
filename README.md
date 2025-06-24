@@ -15,6 +15,9 @@ This project uses a mock healthcare CSV dataset from Kaggle that provides compre
 
 **Source:** https://doi.org/10.34740/kaggle/dsv/10028650
 
+**Works Cited:**
+Zvornicanin, E. (2025). What Is Feature Importance in Machine Learning? _baeldung_. https://www.baeldung.com/cs/ml-feature-importance
+
 ## Table Columns
 Country - The name of the country where the health data was recorded.
 
@@ -103,7 +106,9 @@ Next, I wanted to split the table by country to organize the data and work with 
 I dropped the Country column for each country because all the data in each table comes from one country. I made a table for USA data. I used the same procedure to create tables for Italy, Japan, and Indonesia.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/One%20Country%20Table.png)
 
-## Finding Feature Importances
+## Finding Feature Importance
+Feature (variable) importance indicates how much each feature contributes to the model prediction. Basically, it determines the degree of usefulness of a specific variable for a current model and prediction (Zvornicanin,2025, para. 4)
+
 I prioritized data from the USA table. I started building the train and test data to gather feature importances. I wanted to find the feature importances when the target columns are Prevalence Rate (%), Recovery Rate (%), and Mortality Rate (%). It will give me insight into which feature greatly affects machine learning predictions. I split the data into train and test data. I fit a Random Forest Regressor model.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Choosing%20Feature%20Importances.png)
 
