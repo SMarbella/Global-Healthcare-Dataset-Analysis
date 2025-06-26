@@ -107,7 +107,7 @@ I dropped the Country column for each country because all the data in each table
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Data%20Cleaning/One%20Country%20Table.png)
 
 ## Finding Feature Importance
-Feature (variable) importance indicates how much each feature contributes to the model prediction. Basically, it determines the degree of usefulness of a specific variable for a current model and prediction (Zvornicanin,2025, para. 4).
+Feature (variable) importance indicates how much each feature contributes to the model prediction. Basically, it determines the degree of usefulness of a specific variable for a current model and prediction (Zvornicanin, 2025, para. 4).
 
 I prioritized data from the USA table. I started building the train and test data to gather feature importance. I wanted to find the feature importance when the target columns are Prevalence Rate (%), Recovery Rate (%), and Mortality Rate (%). It will give me insight into which feature greatly affects machine learning predictions. I split the data into train and test data. I fit a Random Forest Regressor model.
 ![Image](https://github.com/SMarbella/global-healthcare-dataset-analysis/blob/main/Feature%20Importances/Choosing%20Feature%20Importances.png)
